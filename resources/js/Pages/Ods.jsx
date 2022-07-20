@@ -1,19 +1,29 @@
+import About from "@/Components/Home/About";
+import Book from "@/Components/Home/Book";
+import Contact from "@/Components/Home/Contact";
 import Header from "@/Components/Home/Header";
 import Hero from "@/Components/Home/Hero";
-import { Head, Link } from "@inertiajs/inertia-react";
-import { TrendingFlat } from "@mui/icons-material";
-import React, { useState } from "react";
+import OurWork from "@/Components/Home/OurWork";
+import Price from "@/Components/Home/Price";
+import ServiceDescription from "@/Components/Home/ServiceDescription";
+import { Head } from "@inertiajs/inertia-react";
+import React from "react";
 
-function Ods({ props }) {
+function Ods(props) {
     console.log(props);
     return (
-        <div className="mx-auto bg-stone-200">
+        <div>
             <Head title="Our Deep Story" />
-            <div className="mx-auto md:max-w-7xl">
+            <div className="mx-auto bg-stone-200">
                 <Header />
-                <Hero/>
+                <Hero />
+                <About />
+                <Price />
+                <ServiceDescription/>
+                <Book/>
+                {/* <OurWork/> */}
+                <Contact/>
             </div>
-          
         </div>
     );
 }

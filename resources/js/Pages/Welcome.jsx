@@ -1,7 +1,11 @@
 import React from 'react';
 import { Link, Head } from '@inertiajs/inertia-react';
+import Header from '@/Components/Home/Header';
+import Hero from '@/Components/Home/Hero';
+import About from '@/Components/Home/About';
 
 export default function Welcome(props) {
+    console.log(props)
     return (
         <>
             <Head title="Welcome" />
@@ -253,5 +257,6 @@ export default function Welcome(props) {
                 </div>
             </div>
         </>
+
     );
 }
